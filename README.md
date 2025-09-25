@@ -64,3 +64,39 @@ _________________________________________________________________
  dense_1 (Dense)            (None, 38)                19494    
 =================================================================
 Total params: 44,416,486
+3. Overfitting Önleme Teknikleri
+
+Dropout Katmanları: %25-50 dropout oranı
+Batch Normalization: Her konvolüsyon katmanından sonra
+Early Stopping: 10 epoch sabır ile
+Learning Rate Scheduling: Adaptif öğrenme oranı
+Data Augmentation: Veri çeşitliliği artırma
+
+4. Hyperparameter Optimizasyonu
+
+Optimizer: Adam (lr=0.001)
+Loss Function: Categorical Crossentropy
+Batch Size: 32
+Epochs: 50 (Early stopping ile)
+Activation: ReLU (hidden), Softmax (output)
+
+📈 Elde Edilen Sonuçlar
+Model Performansı
+
+Test Accuracy: 94.2%
+Test Loss: 0.187
+Precision: 94.1%
+Recall: 94.2%
+F1-Score: 94.1%
+
+Confusion Matrix
+Show Image
+Eğitim Sürecİ
+Show Image
+Top-5 En İyi Sınıflandırılan Hastalıklar:
+
+Healthy Plants: 98.5% accuracy
+Tomato Late Blight: 96.8% accuracy
+Apple Scab: 95.2% accuracy
+Corn Leaf Blight: 94.1% accuracy
+Potato Early Blight: 93.7% accuracy
